@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  font-family: 'Philosopher', sans-serif;
+  letter-spacing: -2px;
+  background-color: rgb(219, 237, 243);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 129, 138);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Movie-search {
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 32px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 40%;
+}
+
+.Movie-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+}
+
+.Movie-wrapper {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  background-color: rgb(64, 75, 105);
+  width: 23%;
+  color: rgb(219, 237, 243);
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: rgba(40, 49, 73, 0.5) 0px 5px 15px;
+}
+
+.Movie-title {
+  height: 60px;
+  display: flex;
+}
+
+.Movie-title h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.Movie-image {
+  width: 100%;
+}
+
+.Movie-date, .Movie-rate {
+  font-size: 20px;
+}
+
+.Movie-rate {
+  margin-bottom: 7px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .Movie-wrapper {
+    width: 30%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .Movie-wrapper {
+    width: 45%;
+  }
+}
+
+/* Smart Phone */
+@media screen and (max-width: 580px) {
+  .Movie-search {
+    height: 21px;
+    font-size: 13px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .Movie-container {
+    flex-direction: column;
+  }
+
+  .Movie-wrapper {
+    width: 100%;
+  }
+}
