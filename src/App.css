@@ -55,7 +55,7 @@
 }
 
 .Movie-title {
-  height: 60px;
+  height: 80px;
   display: flex;
 }
 
@@ -63,6 +63,7 @@
   font-size: 20px;
   font-weight: bold;
   margin: auto;
+  padding: 3px;
 }
 
 .Movie-image {
@@ -84,8 +85,19 @@
   }
 }
 
+@media screen and (max-width: 1231px) {
+  .Movie-title {
+    height: 90px;
+    display: flex;
+  }
+  
+  .Movie-title h1 {
+    padding: 3px;
+  }
+}
+
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
   .Movie-wrapper {
     width: 45%;
   }
