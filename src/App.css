@@ -55,7 +55,7 @@
 }
 
 .Movie-title {
-  height: 80px;
+  height: 70px;
   display: flex;
 }
 
@@ -64,6 +64,7 @@
   font-weight: bold;
   margin: auto;
   padding: 3px;
+  line-height: 25px;
 }
 
 .Movie-image {
@@ -87,7 +88,7 @@
 
 @media screen and (max-width: 1231px) {
   .Movie-title {
-    height: 90px;
+    height: 85px;
     display: flex;
   }
   
